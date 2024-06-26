@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.mainContent{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #eee;
+  animation: popup1 0.3s ease-in-out forwards;
+}
+@keyframes popup1 {
+  0%{
+    transform:  scale(0);
+  }
+  50%{
+    transform:  scale(1.2);
+  }
+  100%{
+    transform:  scale(1);
+  }
+}
+.picBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+}
+.picBox img{
+  width:90% ;
+}
+.formBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 70px 10px;
+  width: 50%;
+}
+.formBox .greet{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 340px;
+}
+.greet h1{
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+.greet p{
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.greet p a{
+  text-decoration: none;
+  color: #8699da;
+}
+.formBox form{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.formBox form .inputBox{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding:10px 0;
+  width: 100%;
+  position: relative;
+}
+form .inputBox label{
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+form .inputBox input{
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  padding: 7px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #ddd;
+  transition: 0.3s ease-in-out;
+}
+form .inputBox input:focus{
+  box-shadow: 0 0 10px #7795f1;
+}
+.inputBox i{
+  position: absolute;
+  top: 56px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+form button{
+  align-self: center;
+  width: 230px;
+  height: 40px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #8699da;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+form button:hover{
+  background: #7795f1;
+}
+/* ##################### login Page ##################### */
+.loginContent{
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #eee;
+  animation: popup2 0.3s ease-in-out forwards;
+}
+@keyframes popup2 {
+  0%{
+    transform:  scale(0);
+  }
+  50%{
+    transform:  scale(1.2);
+  }
+  100%{
+    transform:  scale(1);
+  }
+}
+.loginContent .formBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 50%;
+  min-height: 100vh;
+}
+.formBox form a{
+  text-decoration: none;
+  color: #8699da;
+}
+
+/* ################# media query ################# */
+
+@media (max-width: 900px) {
+  .mainContent{
+    flex-direction: column;
+    padding: 0;
+  }
+  .picBox{
+    order: 0;
+    width: 100%;
+  }
+  .formBox{
+    order: 1;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .formBox form{
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .formBox .greet{
+    width: 90%;
+  }
+
+  /* ########## login page ################# */
+
+  .loginContent .formBox{
+    order: 1;
+    width: 100%;
+    padding: 20px 10px;
+  }
+}

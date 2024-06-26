@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN-SIGNUP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section class="mainContent">
+    <div class="formBox">
+      <div class="greet">
+        <h1>WELCOME BACK!</h1>
+        <p>have an account, <a id="lPage" href="#">Login</a></p>
+      </div>
+        <form>
+          <div class="inputBox">
+           <label for="firstName">First Name</label> 
+           <input type="text" id="firstName" placeholder="First Name">
+          </div>
+          <div class="inputBox">
+           <label for="lastName">Last Name</label> 
+           <input type="text" id="lastName" placeholder="Last Name">
+          </div>
+          <div class="inputBox">
+           <label for="userName">username</label> 
+           <input type="text" id="userName" placeholder="username">
+          </div>
+          <div class="inputBox">
+           <label for="userEmail">Email</label> 
+           <input type="text" id="userEmail" placeholder="Email">
+          </div>
+          <div class="inputBox">
+           <label for="userPassword">Password</label> 
+           <input type="password" id="userPassword" placeholder="Pasword">
+           <i id="eye1" class="fa-solid fa-eye-slash"></i>
+          </div>
+          <div class="inputBox">
+           <label for="userConfirmPassword">Confirm Password</label> 
+           <input type="password" id="userConfirmPassword" placeholder="Confirm Password">
+           <i id="eye2" class="fa-solid fa-eye-slash"></i>
+          </div>
+          <button type="submit" id="signupBtn">Signup</button>
+        </form>
+      </div>
+    <div class="picBox">
+      <img src="./Image.png">
+    </div>
+  </section>
+  <section class="loginContent">
+    <div class="picBox">
+      <img src="./Image.png">
+    </div>
+    <div class="formBox">
+      <div class="greet">
+        <h1>Join us!</h1>
+        <p>Don't have and account, <a id="sPage" href="#">Signup</a></p>
+      </div>
+      <form>
+        <div class="inputBox">
+          <label for="getuserName">username</label> 
+          <input type="text" id="getuserName" placeholder="username or email">
+         </div>
+         <div class="inputBox">
+          <label for="getuserPassword">Password</label> 
+          <input type="password" id="getuserPassword" placeholder="Pasword">
+          <i id="eye3" class="fa-solid fa-eye-slash"></i>
+         </div>
+         <a href="#">Forget password?</a>
+         <button type="submit" id="login">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ############### script file ################# -->
+   <script src="./script.js"></script>
+   <!-- ################## sweet alert cdn ############### -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
